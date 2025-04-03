@@ -1,4 +1,5 @@
 package com.korit.완전탐색;
+
 import java.util.Scanner;
 
 class Main
