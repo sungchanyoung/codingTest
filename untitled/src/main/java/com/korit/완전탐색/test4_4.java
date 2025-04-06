@@ -1,5 +1,4 @@
 package com.korit.완전탐색;
-
 import java.util.Scanner;
 
 public class test4_4{
@@ -32,6 +31,8 @@ public class test4_4{
             }
             return maxScore;
         }
+
+        //스왓을 위한 함수  => 자리 바꾸기
         public static void swapCandy(char[][] map, int r1, int c1, int r2, int c2) {
             char tmp = map[r1][c1];
             map[r1][c1] = map[r2][c2];
@@ -54,6 +55,7 @@ public class test4_4{
                         ans = Math.max(ans, calcScore(map));
                         swapCandy(map, i, j, i, j + 1);
                     }
+
                     // swap below
                     if (i + 1 < N) {
                         swapCandy(map, i, j, i + 1, j);
