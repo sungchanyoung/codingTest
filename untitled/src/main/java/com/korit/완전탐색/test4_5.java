@@ -38,9 +38,9 @@ public class test4_5 {//프로그래머스-소수 찾기
         recursive("", numbers);
 
         // 소수의 개수만 센다
-        Iterator<Integer> it  =numberSet.iterator();
+        Iterator<Integer> it = numberSet.iterator();
         while (it.hasNext()){
-            int number =it.next();
+            int number = it.next();
             if(isPrime(number)){
                 answer++;
             }
