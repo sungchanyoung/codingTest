@@ -20,6 +20,7 @@ public class try1 {
     public void recurive(String comb, String others){
         if(!comb.equals(""))
             set.add(Integer.valueOf(comb));
+
         for (int i = 0; i < others.length(); i++) {
             recurive(comb+others.charAt(i), others.substring(0,i)+ others.substring(i+1));
         }
@@ -39,7 +40,7 @@ public class try1 {
     }
     public static void main(String[] args) {
        try1 try1= new try1();
-        System.out.println(try1.solution("17"));
+       System.out.println(try1.solution("17"));
 
     }
 }
