@@ -7,7 +7,7 @@ public class try2 {//백준 영화감독 숌
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         int n = sc.nextInt();
-        if(n>1){
+        if(n > 1){
             func(n);
         }else{
             System.out.println(666);

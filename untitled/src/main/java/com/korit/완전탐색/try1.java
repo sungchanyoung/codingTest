@@ -40,7 +40,7 @@ public class try1 {
     }
     public static void main(String[] args) {
        try1 try1= new try1();
-       System.out.println(try1.solution("17"));
+        System.out.println(try1.solution("17"));
 
     }
 }
