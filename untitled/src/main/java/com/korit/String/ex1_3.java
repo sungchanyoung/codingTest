@@ -11,15 +11,14 @@ public class ex1_3 {//알파벳 찾기
         for (int i = 0; i < alpa.length; i++) {
             alpa[i] =-1;
         }
+
         for (int i = 0; i < alpa.length; i++) {
             char ch = s.charAt(i);
-            if(alpa[ch -'a'] ==-1){
-                alpa[ch -'a'] =i;
-            }
-
+            if(alpa[ch - 'a'] == -1)
+                alpa[ch - 'a'] = i;
         }
-        for (int sum : alpa){
-            System.out.print(sum +" ");
+        for(int val : alpa){
+            System.out.println(val + " ");
         }
     }
 }
